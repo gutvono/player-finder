@@ -1,0 +1,5 @@
+<form (ngSubmit)="searchProfile()">
+  <input type="text" [formControl]="search" name="steamId" id="steamIdInput" />
+  <button type="button" (click)="searchProfile()">Buscar</button>
+  <p *ngIf="showError">Erro: {{ errorMessage }}</p>
+</form>
